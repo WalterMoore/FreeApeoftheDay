@@ -5,12 +5,14 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var platypus_1 = require('platypus');
 var home_vc_1 = require('../viewcontrols/home/home.vc');
+var gallery_vc_1 = require('../viewcontrols/gallery/gallery.vc');
 var MyApp = (function (_super) {
     __extends(MyApp, _super);
     function MyApp(router) {
         _super.call(this);
         router.configure([
-            { pattern: '', view: home_vc_1.default }
+            { pattern: '', view: home_vc_1.default },
+            { pattern: '/gallery', view: gallery_vc_1.default }
         ]);
     }
     MyApp.prototype.error = function (ev) {
