@@ -13,11 +13,20 @@
 	.nav-span{
 		float: left;
 		margin-left: 8%;
+		transition: all .3s ease-in-out;	
+	}
+	
+	.nav-span:hover{
+		transform: scale(1.2);
 	}
 	
 	h3{
 		color: white;
 		margin-left: 8%;
+		@media only screen and (max-width: 600px){
+			font-size: 2.8vw;
+			margin-left:4%;
+		}
 	}
 	
 	.ghost{
@@ -28,33 +37,65 @@
 		float: right;
 	}
 	
+	.ebay{
+		transition: all .3s ease-in-out;
+	}
+	.ebay:hover{
+		transform: scale(1.2);
+	}
+	
+	.facebook-icon{
+		transition: all .3s ease-in-out;
+	}
+	.facebook-icon:hover{
+		transform: scale(1.2);
+	}
+	
+	.twitter-icon{
+		transition: all .3s ease-in-out;
+	}
+	.twitter-icon:hover{
+		transform: scale(1.2);
+	}
+	
+	.linkedin-icon{
+		transition: all .3s ease-in-out;
+	}
+	.linkedin-icon:hover{
+		transform: scale(1.2);
+	}
+	
 	.flex-items{
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+		width: 50%;
+	#platui > #mixins > .flexbox();
+	#platui > #mixins > .align-items(center);
+	#platui > #mixins > .justify-content(space-around);
+	#platui > #mixins > .flex-wrap(wrap);
 
 		.facebook-icon{
 			width: 4vw; 
 			height: 4vw;
-			padding-left: 1em;
+			//padding-left: 2em;
 		}
 		.twitter-icon{
 			width: 4vw;
 			height: 4vw;
-			padding-left: 1em;
+			// padding-left: 2em;
+			// padding-bottom: 1px;
 		}
 		.ebay{
-			padding-left: .5em;
+			//padding-left: 1.5em;
 			
 		}
 		.ebay-text{
-			color: #cccccc;
+			color: #dddddd;
 		}
 		.linkedin-icon{
 			width: 4vw;
 			height: 4vw;
-			padding-left: 1em;
-			padding-right: 3em;
+			// padding-left: 2em;
+			// padding-right: 3em;
+		 	padding-bottom: 1px;
 		}
 	}
 		
